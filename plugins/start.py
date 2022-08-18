@@ -90,13 +90,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                     [
-                        InlineKeyboardButton("▶️ 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ▶️", url="https://youtube.com/channel/UCOcoLecaMrqfU4m34y4hOIA")                        
-                    ],
-                    
+                        InlineKeyboardButton("▶️ 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ▶️", url="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA")                        
                     ],
                     [
-                        InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data = "about"),
-                        InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
+                        InlineKeyboardButton("❤️ 𝙰𝙱𝙾𝚄𝚃 ❤️", callback_data = "about"),
+                        InlineKeyboardButton("😆 𝙲𝙻𝙾𝚂𝙴 😆", callback_data = "close")
                     ]
                 ]
             )        
@@ -119,7 +117,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "🤫 𝙹𝙾𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🤫",
+                "𝙹𝙾𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
                 url = client.invitelink)
         ]
     ]
@@ -127,7 +125,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '🔄 𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽 🔄',
+                    text = '𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
@@ -186,11 +184,11 @@ async def send_text(client: Bot, message: Message):
         
         status = f"""<b>𝙱𝚁𝙾𝙰𝙳𝙲𝙰𝚂𝚃 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳
 
-𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 🎭: {total}
-𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻 🍭: {successful}
-𝙱𝙻𝙾𝙲𝙺𝙴𝙳 𝚄𝚂𝙴𝚁𝚂 🚫: {blocked}
-𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 🤕: {deleted}
-𝚄𝙽𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻 😭: {unsuccessful}</b>"""
+𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 👥 : {total}
+𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻 🤗 : {successful}
+𝙱𝙻𝙾𝙲𝙺𝙴𝙳 𝚄𝚂𝙴𝚁𝚂 🥲 : {blocked}
+𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 😭 : {deleted}
+𝚄𝙽𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻 🤕 : {unsuccessful}</b>"""
         
         return await pls_wait.edit(status)
 
