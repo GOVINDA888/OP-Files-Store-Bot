@@ -91,7 +91,7 @@ async def start_command(client: Client, message: Message):
             [
                     [
                         InlineKeyboardButton("▶️ 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ▶️", url="https://youtube.com/channel/UCOcoLecaMrqfU4m34y4hOIA")                        
-                    ],  InlineKeyboardButton("😎 𝙾𝚆𝙽𝙴𝚁 😎", url="https://t.me/Sharathitsisme")
+                    ],
                     
                     ],
                     [
